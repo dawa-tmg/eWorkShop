@@ -1,9 +1,10 @@
-import Image from "next/image";
-
+import About from "./about/page";
+import Contact from "./contact/page";
 export default function Home() {
   return (
-    <div>
-      <h1>hello there</h1>
-    </div>
+    <>
+      <About />
+      <Contact />
+    </>
   );
 }
