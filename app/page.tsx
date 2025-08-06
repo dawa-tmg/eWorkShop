@@ -1,10 +1,7 @@
-import About from "./about/page";
-import Contact from "./contact/page";
 export default function Home() {
   return (
     <>
-      <About />
-      <Contact />
+      <h1 className="text-5xl font-bold text-red-500">Ha ha Nothing is AVAILABLE here!!!</h1>
     </>
   );
 }

@@ -2,7 +2,7 @@ import ContactForm from "../components/Contact"
 
 export default function Contact(){
     return (
-        <div className="grid grid-cols-2 gap-5">
+        <div className="grid grid-cols-2 gap-5 py-10">
             <div>
                 <h1 className="text-5xl text-gray-500 font-bold py-10">Why Choose eWorkShop</h1>
                 <ul>
