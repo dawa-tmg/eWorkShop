@@ -18,8 +18,8 @@ export default function About(){
                 </div>
             </div>
             <div className="w-full">
-                <h2 className="text-6xl text-red-500 font-bold">About eWorkShop</h2>
-                <p className="text-xl text-gray-500 py-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut repellat ratione reprehenderit nam est maxime quasi rem ullam maiores nemo a ab eos aliquam, debitis fugiat dignissimos qui, dolore animi, aspernatur quidem velit deserunt veniam magnam. Dolore, nisi sint incidunt, ratione sit possimus corporis accusantium animi tempora esse perferendis quos repellat delectus nulla porro temporibus ab quam, asperiores repellendus? Nostrum repellendus fugiat maxime necessitatibus dignissimos. Quo earum eos, dolores praesentium atque velit vitae, quidem aspernatur voluptatem laborum nostrum fuga blanditiis repellat voluptates? Nisi atque vero harum numquam, facere distinctio, nemo nesciunt veritatis vitae aliquam nam eum dolorum, magnam quaerat adipisci.</p>
+                <h2 className="text-4xl text-red-500 font-bold">About eWorkShop</h2>
+                <p className="text-xl text-gray-500 my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut repellat ratione reprehenderit nam est maxime quasi rem ullam maiores nemo a ab eos aliquam, debitis fugiat dignissimos qui, dolore animi, aspernatur quidem velit deserunt veniam magnam. Dolore, nisi sint incidunt, ratione sit possimus corporis accusantium animi tempora esse perferendis quos repellat delectus nulla porro temporibus ab quam, asperiores repellendus? Nostrum repellendus fugiat maxime necessitatibus dignissimos. Quo earum eos, dolores praesentium atque velit vitae, quidem aspernatur voluptatem laborum nostrum fuga blanditiis repellat voluptates? Nisi atque vero harum numquam, facere distinctio, nemo nesciunt veritatis vitae aliquam nam eum dolorum, magnam quaerat adipisci.</p>
                 <Button 
                 text = {
                     <>

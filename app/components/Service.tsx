@@ -1,6 +1,9 @@
 'use client'
 
+import { RxTimer } from "react-icons/rx";
+import { GiTakeMyMoney } from "react-icons/gi";
 import Input from "./Input";
+
 interface ServiceProps {
   id: string,
   image: string;
@@ -36,7 +39,7 @@ export default function Service({ id, image, name, description, price, duration,
     const formData = new FormData(e.currentTarget)
     const body = Object.fromEntries(formData)
 
-      const response = await fetch('/api/availservice',{
+      const response = await fetch('/api/service-request',{
         method: 'POST',
         body: JSON.stringify(body)
       })
@@ -48,16 +51,17 @@ export default function Service({ id, image, name, description, price, duration,
         <img src={image} className="w-full h-60" />
         <div className="pt-4">
           <h2 className="text-2xl font-bold mb-1">{name}</h2>
-          <p className="text-lg font-normal text-gray-700">{description}</p>
-          <p className="text-lg font-normal font-semibold">${price}</p>
-          <p className="text-lg font-normal font-semibold">{duration} Minutes</p>
-          <button onClick={toggleAvail} id={`btn-${id}`} className="bg-red-500 rounded text-xl text-white font-semibold py-3 px-5">Avail Service</button>
+          <p className="text-lg font-normal text-gray-700 my-2">{description}</p>
+          <p className="text-lg font-normal font-semibold flex gap-2"><GiTakeMyMoney className="text-2xl text-gray-600" />Nu: {price}</p>
+          <p className="text-lg font-normal font-semibold flex gap-2"><RxTimer className="text-2xl text-gray-600" />{duration} Minutes</p>
+          <button onClick={toggleAvail} id={`btn-${id}`} className="bg-red-500 rounded text-xl text-white font-semibold mt-2 py-3 px-5">Avail Service</button>
 
           <form onSubmit={handleBooking} id={`form-${id}`} className="h-full w-full bg-gray-300/94 absolute transform translate-y-[-100%] shadow-md grid gap-4 p-10 hidden">
-          <h2 className="text-2xl font-semibold text-gray-500">Avail Service</h2>
+          <h2 className="border-b-2 text-2xl font-semibold text-gray-500">Avail Service</h2>
             <input name="service_id" value={id} type="hidden"/>
-            <input className="focus:outline-none border border-gray-400 rounded px-2 py-4" placeholder={value} disabled/>
+            <input className="focus:outline-none rounded text-xl font-bold px-2" placeholder={value} disabled/>
             <Input type="text" name="name" placeholder="Customer Name" />
+            <Input type="number" name="phone" placeholder="Phone Number" />
             <Input type="text" name="vehicle" placeholder="Vehicle Number"/>
             <button className="bg-red-500 rounded text-xl text-white font-semibold py-3 px-5">SUBMIT</button>
           </form>
