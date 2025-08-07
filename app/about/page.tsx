@@ -24,8 +24,8 @@ export default function About() {
         </div>
       </div>
       <div className="w-full">
-        <h2 className="text-6xl text-red-500 font-bold">About eWorkShop</h2>
-        <p className="text-xl text-gray-500 py-10">
+        <h2 className="text-5xl text-red-500 font-bold">About eWorkShop</h2>
+        <p className="text-xl text-gray-500 py-6">
           eWorkshop is a modern automotive management system designed to
           streamline operations in car repair shops and service centers. It
           offers features like digital job cards, real-time service tracking,
@@ -36,25 +36,7 @@ export default function About() {
           eWorkshop is revolutionizing how workshops operate in the digital age.
         </p>
         <Button
-          text={
-            <>
-              Learn More{" "}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="size-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                />
-              </svg>
-            </>
-          }
+          text='Learn More'
         />
       </div>
     </div>

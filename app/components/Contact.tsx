@@ -3,7 +3,7 @@ import Button from "./Button"
 export default function ContactForm(){
     return (
         <form className="bg-[#eee] w-[70%] rounded shadow-lg grid grid-cols-1 gap-5 p-10 mx-auto">
-            <h2 className="text-4xl text-red-500 font-bold pb-5">Online Estimate Form</h2>
+            <h2 className="text-3xl text-red-500 font-bold pb-5">Online Estimate Form</h2>
             <Input 
             type = 'text'
             name = 'name'
