@@ -1,7 +1,5 @@
 'use client'
 
-import { MdDeleteForever, MdModeEdit } from "react-icons/md";
-
 export default function DeleteService({service_id}:any) {
     //Delete Service
     const deleteService = async (e:any)=>{
@@ -17,13 +15,13 @@ export default function DeleteService({service_id}:any) {
 
     //Edit Service
     const editService = async (e:any)=>{
-        alert('Ha ha Wanna edit me???')
+        alert('Wanna edit id ' + e.currentTarget.id + ' ???')
     }
 
     return (
-        <div className="flex justify-end gap-2">
-            <MdModeEdit onClick={editService} id={service_id} className="text-gray-500 text-3xl cursor-pointer"/>
-            <MdDeleteForever onClick={deleteService} id={service_id} className="text-gray-500 text-3xl cursor-pointer"/>
+        <div className="flex space-x-5">
+            <button onClick={editService} id={service_id} className="text-lg font-bold text-blue-600 hover:text-blue-800">Edit</button>
+            <button onClick={deleteService} id={service_id} className="text-lg font-bold text-red-600 hover:text-red-800">Delete</button>
         </div>
     )
 }

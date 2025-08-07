@@ -59,5 +59,4 @@ export default function About() {
       </div>
     </div>
   );
-}
-30;
+};

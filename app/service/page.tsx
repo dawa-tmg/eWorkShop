@@ -1,9 +1,7 @@
 import Service from "../components/Service";
-import AddService from "../components/AddService";
-import DeleteService from "../components/DeleteService";
 
 export default async function Services() {
-  //Fetch Services
+  //Get Services
   const response = await fetch('http://localhost:3000/api/service')
 
   if(!response.ok){
@@ -13,16 +11,10 @@ export default async function Services() {
   
   return (
     <div className="w-[80%] mx-auto">
-    <h2 className="text-6xl text-red-500 font-bold">Our Service</h2>
-    <div className="flex justify-end">
-      <AddService/>
-    </div>
-    <div className="grid grid-cols-3 gap-5 ">
+    <h2 className="text-4xl text-red-500 font-bold">Our Service</h2>
+    <div className="grid grid-cols-3 gap-5 mt-5">
       {services.map((service: any) => (
         <div key={service.service_id}>
-        <DeleteService 
-          service_id={service.service_id}
-        />
         <Service
           id={service.service_id}
           image={service.image}
