@@ -2,9 +2,9 @@ import Button from "../components/Button";
 
 export default function About() {
   return (
-    <div className="grid grid-cols-2 py-10">
+    <div className="w-[80%] mx-auto grid grid-cols-2 py-10">
       <div>
-        <div className="h-[90%] w-[70%] bg-[url('/car-crash-accident-street.jpg')] bg-cover bg-center shadow-[-20px_20px_0px_0px_rgba(0,_0,_0)] transform translate-x-[3.5%] relative">
+        <div className="h-full w-[70%] bg-[url('/car-crash-accident-street.jpg')] bg-cover bg-center shadow-[-20px_20px_0px_0px_rgba(0,_0,_0)] relative">
           <img
             src="/spraying-varnish-paint-car.jpg"
             alt="spraying paint on car"
@@ -23,7 +23,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="w-full">
+      <div className="w-full p-5">
         <h2 className="text-5xl text-red-500 font-bold">About eWorkShop</h2>
         <p className="text-xl text-gray-500 py-6">
           eWorkshop is a modern automotive management system designed to
@@ -35,9 +35,7 @@ export default function About() {
           satisfaction. Ideal for both small garages and large service networks,
           eWorkshop is revolutionizing how workshops operate in the digital age.
         </p>
-        <Button
-          text='Learn More'
-        />
+        <Button text='Learn More' />
       </div>
     </div>
   );

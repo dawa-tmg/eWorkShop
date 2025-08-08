@@ -8,8 +8,7 @@ export default function Header() {
         <nav className="grid grid-cols-5 gap-3">
           <a className="text-xl text-red-500 font-bold p-3" href="/">Home</a>
           <a className="text-xl text-red-500 font-bold p-3" href="/about">About</a>
-          <a className="text-xl text-red-500 font-bold p-3" href="/service">Services</a>
-          <a className="text-xl text-red-500 font-bold p-3" href="/team">Team</a>
+          <a className="text-xl text-red-500 font-bold p-3" href="/services">Services</a>
           <a className="text-xl text-red-500 font-bold p-3" href="/contact">Contact</a>
         </nav>
       </div>
