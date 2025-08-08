@@ -3,9 +3,9 @@ import { FaFacebook, FaInstagramSquare, FaLinkedin, FaCarSide } from "react-icon
 
 export default function Footer() {
     return (
-      <footer className="bg-[#333] w-full relative text-white flex flex-col justify-center">
+      <footer className="bg-[#2e3a4d] w-full relative flex flex-col justify-center">
         <div className="border-t-2 border-gray-500 text-center py-10">
-          <p>&copy; {new Date().getFullYear()} eWorkShop | All rights reserved.</p>
+          <p className="text-gray-400 font-semibold">&copy; {new Date().getFullYear()} eWorkShop | All rights reserved.</p>
         </div>
       </footer>
     )
